@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        .imagem-smartphone img {
+
+            height: 50rem;
+        }
+        .imagem-smartphone{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+        .body{
+            width: 100vw;
+            min-height: 100vh;
+            background-color: rgb(243, 243, 243);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .pagina-entrar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .instagram-dados{
+            display: flex;
+            align-items: center; 
+            justify-content: space-around; 
+            flex-direction: column;
+           
+            
+        }
+        
+        .dado_usuario{
+            margin-top: 1rem;
+        }
+        .dado_usuario, .dado-senha{
+            position: relative;
+        }
+        .dado_usuario input, .dado-senha input{
+            display: block;
+            padding: 1rem 0.8rem 0.8rem 0.8rem;
+            width: 100%;
+            max-width: 245px;
+            border: 1px solid gray;
+            border-radius: 0.2rem;
+        }
+        .dado_usuario label, .dado-senha label{
+            font-size: 0.8rem;
+            color: grey;
+            top: 35%;
+            left: 20%;
+            position: absolute;
+            transform: translate(-30%);
+        }
+        .container-login{
+           display: flex;
+            border: 1px solid gray;
+            align-items: center; 
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+        .enter{
+            margin: 0.3rem 0;
+            padding: 0.8rem 2.5rem;
+            width: 100%;
+            max-width: 245px;
+            background:lightblue;
+            display: block;
+            border: 0;
+            border-radius: 2%;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .forma-login{
+            position: relative;
+            display: block;
+            
+            text-transform: uppercase;
+            color: gray;
+            font-size: 0.8rem;
+        }
+        .download {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+           
+            
+        } 
+        
+        .app-download {
+            height: 3rem;
+            width: 10rem;
+            background-size: cover;
+        }
+        .app-download:nth-child(1) {
+            background-image: url('./Imagens/apple-button.png');
+        }
+
+        .app-download:nth-child(2) {
+            background-image: url('./Imagens/googleplay-button.png');
+        }
+        .sem-conta{
+            border: 1px solid gray;
+            border-radius: 4px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0.5rem;
+            padding: 0.8rem 0;
+        }
+        .instalar{
+            text-align: center;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagina-entrar">
+        <div class="imagem-smartphone">
+            <img src="Imagens/instagram-celular.png" alt="celular">
+        </div>
+        <div class="instagram-dados">
+            <div>
+                <div class="container-login">
+                    <img src="Imagens/instagram-logo.png" alt="logo" class="logotipo">
+                    <div >
+                        <div class="dado_usuario">
+                            <input type="text" name="id_usuario">
+                            <label for="id_usuario">Telefone, nome de usuário ou email</label>
+                        </div>
+                        <div class="dado-senha">
+                            <input type="password" name="senha_user">
+                            <label for="senha_user">Senha</label>
+                        
+                        </div>
+                        <button class="enter">Entrar</button>
+                        <span class=" forma-login">ou</span>
+                        <div >
+                            <a href="#">Entrar com o facebook</a>
+                            <a href="#">Esqueceu a senha?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sem-conta">
+                    <p>Não tem conta?</p>
+                    <a href="#">Cadastre-se</a>
+                </div>
+                <div>
+                    <p class="instalar">Obtenha o aplicativo</p>
+                </div>
+                <div class="download">
+                    <a href="#" class="app-download"></a>
+                    <a href="#" class="app-download"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
